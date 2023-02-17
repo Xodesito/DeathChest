@@ -19,7 +19,7 @@ public class MainCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
-        Chest chest = new Chest(player.getUniqueId(), player.getLocation(), player.getInventory().getStorageContents());
+        Chest chest = new Chest(plugin, player.getUniqueId(), player.getLocation(), player.getInventory().getStorageContents());
         chest.spawnChest();
         return false;
     }
