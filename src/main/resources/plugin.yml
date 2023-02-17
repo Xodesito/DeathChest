@@ -1,0 +1,9 @@
+name: DeathChest
+version: '${project.version}'
+main: com.xodesito.deathchest.DeathChest
+api-version: 1.19
+authors: [ Xodesito ]
+description: DeathChest plugin
+commands:
+  deathchest:
+    description: main command
